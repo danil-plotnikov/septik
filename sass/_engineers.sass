@@ -1,0 +1,83 @@
+.engineers
+ display: flex
+ justify-content: space-between
+ margin-bottom: 121rem
+ &-left 
+  width: 524rem
+  display: flex 
+  flex-direction: column 
+  justify-content: space-between
+ &-header 
+  text-align: left
+  font-weight: 500
+  font-size: 36rem
+  line-height: 153%
+  letter-spacing: 0.01em
+  color: #3F3F3F
+  margin-bottom: 52rem
+  span 
+   &::before
+    left: 36%
+ &-btn 
+  font-size: 20rem
+  letter-spacing: 0.02em
+  color: #92A1AC
+  margin-bottom: 31rem
+  cursor: pointer
+  transition: 0.4s
+  &.active
+   color: #3F3F3F
+   font-weight: 600
+  &:hover 
+   color: #3F3F3F
+ &-certif
+  margin-bottom: 0
+  margin-top: 70rem
+ &-right 
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0
+  display: flex
+  z-index: -1
+  transition: 0.4s
+  &.active 
+   opacity: 1
+   position: relative
+   z-index: 2
+  &__wrap
+   position: relative
+   width: 870rem
+ &-images
+  width: 500rem
+  margin-right: 110rem
+ &-img 
+  height: 629rem
+  object-fit: cover 
+  border-radius: 25rem
+ &-info 
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 260rem
+ &-descr 
+  font-size: 20rem
+  line-height: 190%
+  letter-spacing: 0.02em
+  color: #3F3F3F
+ &-name 
+  font-size: 30rem
+  font-weight: 600
+  line-height: 167%
+  letter-spacing: 0.02em
+  color: #3F3F3F
+  width: 100%
+  margin-bottom: 38rem
+ &-nav 
+  display: flex
+  .arrow
+    width: 40rem
+    height: 40rem
+    position: static
+    transform: none
+    margin-right: 16rem

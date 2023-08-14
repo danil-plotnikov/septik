@@ -1,0 +1,506 @@
+$link-color: #59B84A
+
+ 
+html
+ font-size: 0.052084vw
+ scroll-behavior: smooth
+ 
+body 
+ font-size: 16rem
+ font-family: Manrope
+ position: relative
+ z-index: 1
+
+// html,body 
+//  max-width: 100%
+//  overflow-x: hidden
+//  overflow-y: visible
+
+img 
+ max-width: 100%
+
+h1,h2,h3,h4,h5,h6 
+ margin: 0
+
+input 
+ outline: none
+ font-size: 18rem
+ font-weight: 400
+ font-family: Manrope
+ border: none
+ &:placeholder
+  color: #929292
+ 
+a 
+ text-decoration: none
+ color: inherit
+
+button 
+ border: none
+ cursor: pointer
+ font-family: Manrope
+ font-size: 16rem
+ color: #fff
+ display: flex
+ align-items: center
+ justify-content: center
+
+.container
+ width: 1570rem
+ margin: 0 auto
+
+.btn 
+ position: relative
+ background: #47AB38
+ border-radius: 500rem  
+ box-shadow: inset 0px -4rem 28rem rgba(255, 255, 255, 0.25)
+ height: 100rem
+ font-size: 20rem
+ font-weight: 600
+ letter-spacing: 0.03em
+ color: #fff
+ overflow: hidden
+ &::after
+  position: absolute
+  display: block
+  content: ''
+  margin-left: 60rem
+  width: 30rem
+  height: 200%
+  background: #fff
+  animation-delay: 0.05s
+  position: absolute
+  left: -120rem
+  top: -50%
+  animation-timing-function: ease-in-out
+  transition: all 0.1s
+  animation-name: slideme
+  animation-duration: 3s
+  animation-iteration-count: infinite
+  transform: rotate(45deg)
+
+@keyframes slideme
+ 0%
+  left: -120rem
+  margin-left: 0rem
+ 40%
+  left: 110%
+  margin-left: 80rem
+ 100% 
+  left: 110%
+  margin-left: 80rem
+
+.underline 
+ position: relative
+ cursor: pointer
+ color: $link-color
+ &:after 
+  display: block
+  content: ''
+  position: absolute
+  bottom: -2rem
+  left: 0
+  width: 100%
+  height: 1rem
+  border-bottom: 2rem dotted $link-color
+  transition: 0.4s
+ &:hover 
+  &::after 
+   width: 60%
+
+.light
+ width: 4rem
+ height: 4rem
+ background-color: $link-color
+ position: absolute
+ top: 50%
+ transform: translateY(-50%)
+ border-radius: 50%
+ &::before
+  display: block
+  position: absolute
+  content: ''
+  top: 50%
+  left: 50%
+  border-radius: 50%
+  transform: translate(-50%, -50%)
+  width: 100%
+  height: 100%
+  background-color: $link-color
+  opacity: 0.5
+  animation: light 2s infinite
+
+
+@keyframes light
+ 0%
+  transform: translate(-50%, -50%) none
+ 100%
+  transform: translate(-50%, -50%) scale(3)
+  opacity: 0
+
+.round
+ position: relative
+ display: flex
+ align-items: center
+ justify-content: center
+ background: $link-color
+ border-radius: 50%
+ &::after
+  display: block
+  position: absolute
+  content: ''
+  top: 50%
+  left: 50%
+  border-radius: 50%
+  transform: translate(-50%, -50%)
+  width: 100% 
+  height: 100%
+  background: #59B84A
+  opacity: 0.5 
+  animation: round 2s infinite
+ &-big
+  &::after
+   animation: round-big 2s infinite
+
+@keyframes round
+ 0%
+  transform: translate(-50%, -50%) none
+ 100%
+  transform: translate(-50%, -50%) scale(1.5)
+  opacity: 0
+
+@keyframes round-big
+ 0%
+  transform: translate(-50%, -50%) none
+ 100%
+  transform: translate(-50%, -50%) scale(2.5)
+  opacity: 0
+ 
+ul 
+ list-style: none 
+ padding: 0
+
+.block
+ &-header 
+  font-size: 55rem
+  font-weight: 500
+  line-height: 80rem
+  letter-spacing: 0.01em
+  text-align: center
+  margin: 0 auto
+  color: #3F3F3F
+  span 
+   position: relative
+   &::before
+    display: block
+    content: ''
+    width: 311rem
+    height: 132rem
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: url(../img/icons/stroke.png) center no-repeat
+    background-size: contain
+ &-title
+  font-size: 30rem
+  letter-spacing: 0.02em
+  margin: 0 auto
+  text-align: center
+  color: #1C1C1C
+  span 
+   font-weight: 700
+ &-center 
+  display: flex
+  align-items: center
+  justify-content: center
+
+.input 
+ background: #FFFFFF
+ border-radius: 500rem
+ height: 75rem
+ letter-spacing: 0.02em
+ color: #747474
+ height: 75rem
+ padding-left: 49rem
+ &::placeholder
+  font-weight: 300
+  color: #B9B9B9
+  opacity: 1
+ &-hidden
+  display: none !important
+
+
+.arrow
+ border: 1px solid #D9E1E7
+ width: 50rem
+ height: 50rem
+ border-radius: 50%
+ display: flex
+ align-items: center 
+ justify-content: center 
+ transition: 0.4s
+ cursor: pointer
+ position: absolute
+ top: 50%
+ transform: translateY(-50%)
+ user-select: none
+ img 
+  width: 14rem
+   transition: 0.4s
+ &:hover 
+  background: $link-color
+  border: 1rem solid $link-color 
+  img
+   filter: invert(1)
+ &-prev
+  left: 0
+ &-next 
+  right: 0
+  img 
+   transform: scaleX(-1)
+
+.owl
+ &-dots
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 0
+  display: flex
+ &-dot 
+  margin: 0 5.5rem
+  span
+   background: #F1F1F1
+   width: 10rem
+   height: 10rem
+   border-radius: 50%
+   transition: 0.4s
+   &:hover 
+    background: $link-color
+  &.active
+   span
+    background: $link-color
+
+.select
+ width: 300rem
+ &.select_show
+  .select__toggle
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+ &__option
+  &_selected 
+   font-weight: 700
+ &__toggle
+  transition: 0.4s
+  width: 100%
+  color: #1C1C1C
+  padding-left: 81rem
+  height: 100%
+  font-size: 14rem
+  border-radius: 45rem 
+  border: none
+  font-style: normal
+  margin: 0 auto
+  justify-content: flex-start
+  position: relative
+  font-size: 18rem
+  &::after
+   background: url(../img/icons/select-arrow.svg) center no-repeat
+   background-size: cover
+   width: 15rem
+   height: 9rem
+   position: absolute
+   top: 50%
+   transform: translateY(-50%)
+   right: 40rem
+   transition: 0.4s
+   
+  &-img 
+   position: absolute
+   left: 27rem
+   top: 50%
+   transform: translateY(-50%)
+   width: 40rem
+   height: 40rem
+   border-radius: 50%
+   display: flex
+   align-items: center
+   justify-content: center
+   z-index: 2
+   display: none
+   img 
+    width: 20rem
+   &__whatsapp
+    background: #39CB59
+   &__telegram
+    background: #05A0EB
+   &.active 
+    display: flex
+.select__dropdown
+ max-height: none
+ border: none
+ border-radius: 0 0 45rem 45rem
+ transition: 0.4s
+ display: block
+ opacity: 0
+ z-index: -1
+ top: 80%
+ width: 100%
+ left: 50%
+ transform: translateX(-50%)
+ color: #1C1C1C
+ li 
+  height: 70rem
+  display: flex
+  align-items: center
+  padding-left: 81rem
+.select_show .select__toggle::after
+ transform: translateY(-50%) scaleY(-1)
+
+.select_show .select__dropdown
+ opacity: 1
+ z-index: 1
+
+.up
+ display: none
+ position: fixed
+ right: 5%
+ bottom: 5%
+ box-shadow: 0 0 84rem rgba(244,0,70, 0.41)
+ background-color: $link-color
+ width: 60rem
+ height: 60rem
+ border-radius: 50%
+ align-items: center
+ justify-content: center
+ cursor: pointer
+ opacity: 0
+ transition: 0.4s
+ z-index: 30
+ &::before
+  content: ''
+  position: relative
+  border: 16rem solid transparent
+  border-bottom: 20rem solid #fff
+  transform: translateY(-25%)
+  transition: 0.4s
+ &.active 
+  opacity: 1
+  transform: scale(1)
+ &:hover:before 
+  transform: translateY(-37%)
+
+.form
+ &-accept
+  input 
+   display: none
+   &:checked
+    ~.form-accept__check
+     background: $link-color
+     img 
+      opacity: 1
+  &__check
+   border: 1rem solid $link-color
+   border-radius: 7rem
+   width: 20rem
+   cursor: pointer
+   height: 20rem
+   margin-right: 13rem
+   transition: 0.4s
+   display: flex
+   align-items: center
+   justify-content: center
+   img 
+    transition: 0.4s
+    filter: brightness(0) invert(1)
+    width: 8rem
+    opacity: 0
+  &__wrap
+   display: flex
+   align-items: center
+   margin: 0 auto
+   justify-content: center
+   p 
+    font-size: 10rem
+    line-height: 150%
+    color: #1C1C1C
+    width: 218rem
+    span 
+     transition: 0.4s
+     cursor: pointer
+     &:hover 
+      color: $link-color
+ 
+.telegram, .whatsapp, .vk
+ width: 52rem
+ height: 52rem
+ border-radius: 50%
+ display: flex
+ align-items: center
+ justify-content: center
+ transition: 0.4s
+ &:hover 
+  transform: scale(1.1)
+
+.telegram
+ background: #05A0EB
+ img
+  width: 20rem
+
+.whatsapp
+ background: #39CB59
+ img 
+  width: 22rem 
+
+.vk
+ background: #3483BC
+ img 
+  width: 20rem 
+
+*[data-fancybox]
+ cursor: pointer
+
+.owl-carousel .owl-item img
+ width: auto
+
+.swipe
+ display: none
+
+.popup-politic__open
+ transition: 0.4s
+ &:hover 
+  color: $link-color
+
+@import 'header'
+@import 'main-cont'
+@import 'add'
+@import 'quiz'
+@import 'models'
+@import 'catalog'
+@import 'budget'
+@import 'guarantees'
+@import 'free'
+@import 'more'
+@import 'arranged'
+@import 'video'
+@import 'reviews'
+@import 'openly'
+@import 'install'
+@import 'numbers'
+@import 'engineers'
+@import 'mount'
+@import 'quality'
+@import 'report'
+@import 'faq' 
+@import 'request'
+@import 'contacts'
+@import 'footer'
+@import 'pages'
+@import 'popup'
+
+.hidden
+ display: none
+ &-desktop
+  display: none 
+
+@import 'media'

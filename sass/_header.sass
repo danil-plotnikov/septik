@@ -1,0 +1,114 @@
+.header
+ display: flex 
+ justify-content: space-between
+ align-items: center
+ margin-bottom: 146rem
+ &-logo 
+  display: flex
+  align-items: center
+  img 
+   width: 170rem
+   margin-right: 30rem
+  p 
+   font-size: 10rem
+   line-height: 170%
+   letter-spacing: 0.04em
+   span 
+    font-weight: 700
+ &-map 
+  display: flex
+  align-items: center
+  img 
+   width: 65rem
+   margin-right: 16rem
+  &__info
+   font-size: 14rem
+   letter-spacing: 0.03em
+   margin-bottom: 8rem
+  a 
+   font-size: 14rem
+   font-weight: 500
+   letter-spacing: 0.03em
+ &-catalog
+  font-size: 14rem
+  letter-spacing: 0.03em
+ &-messenger
+  display: flex
+  align-items: center
+  &__text
+   font-size: 14rem
+   line-height: 143%
+   letter-spacing: 0.03em
+   text-align: right
+   position: relative
+   .light
+    top: 8rem
+    transform: none
+    left: 0
+  .telegram
+   margin: 0 13rem
+ &-call
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__time
+   display: flex
+   align-items: center
+   justify-content: center
+   margin-bottom: 9rem
+   position: relative
+   .light
+    left: -6rem
+   p 
+    font-size: 14rem
+    letter-spacing: 0.03em
+    margin-left: 6rem
+  a
+   display: flex
+   align-items: center
+   justify-content: center
+   margin-bottom: 7rem
+   transition: 0.4s
+   &:hover 
+    color: $link-color
+   img 
+    width: 11rem
+    margin-right: 5rem
+   p 
+    font-size: 22rem
+    font-weight: 600
+    letter-spacing: 0.02em
+  &__popup
+   font-weight: 500
+   font-size: 14rem
+ &-burger
+  display: none
+    
+.nav
+ position: absolute
+ top: 146rem
+ width: 100%
+ &.fixed
+  position: fixed
+  top: 0
+  padding: 15rem 0
+  background: #fff
+  color: #3f3f3f
+  z-index: 20
+ .container
+  display: flex
+  align-items: center
+  justify-content: space-between
+ a 
+  font-weight: 500
+  letter-spacing: 0.03em
+  transition: 0.4s
+  &::first-letter
+   text-transform: uppercase
+  &:hover 
+   color: $link-color
+
+    
+
+
+

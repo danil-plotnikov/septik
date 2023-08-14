@@ -1,0 +1,82 @@
+.video
+ display: flex
+ justify-content: space-between
+ margin-bottom: 50rem
+ &-left 
+  position: relative
+  width: 433rem
+  &__sticky 
+   position: sticky
+   top: 50rem
+ .block-header
+  text-align: left
+  margin-bottom: 39rem
+ &-more 
+  display: flex
+  align-items: center
+  &:hover 
+   p
+    color: $link-color
+  &__icon
+   width: 40rem
+   height: 40rem
+   display: flex
+   align-items: center
+   justify-content: center
+   background: #FF0000
+   border-radius: 50%
+   margin-right: 15rem
+   img 
+    width: 19rem
+  p 
+   font-size: 18rem
+   font-weight: 500
+   line-height: 156%
+   letter-spacing: 0.03em
+   text-decoration-line: underline
+   transition: 0.4s
+   color: #3F3F3F
+ &-right 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 1030rem
+ &-block 
+  width: 490rem
+  height: 300rem
+  border-radius: 25rem
+  overflow: hidden
+  margin-bottom: 53rem
+  position: relative
+  &::after 
+   background: $link-color
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   position: absolute
+   display: block
+   content: ''
+   opacity: 0
+   transition: 0.4s
+  &__bg 
+   width: 100%
+   height: 100%
+   object-fit: cover
+   transition: 0.4s
+  &__icon 
+   width: 74rem
+   height: 51rem
+   position: absolute
+   object-fit: contain
+   top: 50%
+   left: 50%
+   z-index: 2
+   transform: translate(-50%, -50%)
+   transition: 0.4s
+  &:hover 
+   &::after
+    opacity: 0.2
+   .video-block
+    &__bg
+     transform: scale(1.1)   

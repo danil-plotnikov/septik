@@ -1,0 +1,80 @@
+.contacts
+ display: flex
+ justify-content: space-between
+ margin-bottom: 87rem
+ padding-top: 50rem
+ margin-top: -50rem
+ &-info 
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  font-size: 14rem
+  line-height: 150%
+  width: 230rem
+  &__block 
+   img 
+    max-width: 20rem
+    margin-bottom: 8rem
+   a 
+    transition: 0.4s
+    &:hover 
+     color: $link-color
+  &__title 
+   font-weight: 700
+ &-socials
+  display: flex
+  a 
+   margin-right: 6rem
+   width: 42rem
+   height: 42rem
+ &-photo
+  width: 275rem
+  &__title
+   font-size: 24rem
+   font-weight: 500
+   letter-spacing: 0.02em
+   margin-bottom: 22rem
+  &__block 
+   border-radius: 25rem
+   position: relative
+   overflow: hidden
+   img 
+    height: 200rem
+    object-fit: cover 
+   p 
+    font-weight: 500
+    color: #FFFFFF
+    letter-spacing: 0.02em
+    position: absolute
+    left: 24rem
+    bottom: 18rem
+ &-slider 
+  margin-bottom: 15rem
+  position: static
+  .owl-dots
+   bottom: 8rem
+   left: 100%
+   transform: translateX(-100%)
+   justify-content: flex-end
+  &__wrap 
+   position: relative
+   margin-bottom: 22rem
+   &:nth-last-child(1)
+    margin-bottom: 0
+  &__nav 
+   display: flex
+   .arrow
+    position: relative
+    transform: none 
+    margin-right: 12rem
+    width: 30rem
+    height: 30rem
+    border: 1px solid #D9E1E7
+ &-map
+  width: 860rem 
+  &__title
+   margin-bottom: 15rem
+  iframe
+   border-radius: 25rem 
+   height: 520rem
+   width: 100%

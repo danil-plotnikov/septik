@@ -1,0 +1,263 @@
+.popup
+ position: fixed
+ top: 0
+ left: 0
+ width: 100%
+ height: 100%
+ display: none
+ align-items: center
+ justify-content: center
+ z-index: 100
+ &-bg
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: -1
+  opacity: 0.5
+  cursor: pointer
+  background: #000
+ &-main 
+  position: relative
+ &-close
+  top: 35rem
+  right: 46rem
+  width: 20rem
+  position: absolute
+  cursor: pointer
+ &-politic 
+  &__main
+   width: 1570rem
+   height: 80%
+   background: #fff
+   border-radius: 35rem 
+   padding: 30rem
+   overflow-y: scroll 
+   -ms-overflow-style: none
+   &::-webkit-scrollbar
+    width: 0
+   h2
+    margin-bottom: 20rem
+   p 
+    margin-bottom: 10rem
+   .popup-close 
+    top: 20rem
+    right: 20rem
+ &-video
+  position: fixed
+  bottom: 30rem
+  left: 30rem
+  z-index: 5
+  &__click
+   margin-bottom: 47rem
+   position: relative
+   font-size: 15rem
+   letter-spacing: 0.02em
+   color: #1C1C1C
+   display: inline-block
+   z-index: 2
+   img 
+    position: absolute
+    width: 70rem
+    left: 115%
+    top: 7rem 
+  &__main 
+   width: 231rem
+   height: 300rem
+   position: relative
+   display: block
+   border-radius: 25rem
+   overflow: hidden
+   .round 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 63rem
+    height: 63rem
+  &__bg
+   width: 100%
+   height: 100%
+   object-fit: cover 
+  &__close
+   cursor: pointer
+   position: absolute
+   top: 22rem
+   right: 18rem
+ &-request
+  &__main 
+   width: 850rem
+   height: 500rem
+   padding: 60rem 57rem 
+   position: relative
+   border-radius: 35rem
+   overflow: hidden
+   color: #1C1C1C
+  &__bg 
+   position: absolute
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   object-fit: cover
+   z-index: -1
+  &__wrap 
+   width: 350rem
+   text-align: center
+   margin-left: auto
+   form
+    .input
+     width: 100%
+     margin-bottom: 21rem
+     height: 85rem
+    .btn 
+     width: 100%
+     height: 85rem
+     margin-bottom: 21rem
+    .form-accept
+     &__wrap
+      text-align: left
+      p 
+       width: 255rem
+  &__title
+   font-size: 32rem
+   line-height: 135%
+   font-weight: 600
+   margin-bottom: 21rem
+  &__text 
+   line-height: 160%
+   letter-spacing: 0.02em
+   margin-bottom: 21rem
+  
+ &-stock
+  &__main
+   width: 850rem
+   padding: 62rem 66rem
+   position: relative
+   text-align: center
+   border-radius: 35rem
+   overflow: hidden
+  &__wrap
+   margin: 0
+  &__header
+   font-weight: 600
+   font-size: 32rem
+   color: #59B84A
+   margin-bottom: 26rem
+  &__title 
+   margin-bottom: 26rem
+   font-size: 24rem
+   font-weight: 600
+   color: #1C1C1C
+   line-height: 135%
+  &__text 
+   letter-spacing: 0.02em
+   line-height: 160%
+   margin-bottom: 21rem
+ &-leave 
+  &__main 
+   position: relative
+   width: 950rem
+   height: 650rem
+   display: flex
+   align-items: center
+   padding-left: 80rem
+   border-radius: 35rem
+   overflow: hidden
+  &__bg
+   position: absolute
+   object-fit: cover
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   z-index: -1
+  &__wrap
+   width: 395rem
+   text-align: center
+  &__header
+   font-size: 32rem 
+   margin-bottom: 20rem
+   color: #3F3F3F
+  &__text 
+   letter-spacing: 0.02em
+   margin-bottom: 20rem
+  &__title
+   font-size: 24rem
+   line-height: 32rem
+   margin-bottom: 20rem
+  &__form
+   width: 350rem
+   &-text
+    font-size: 14rem
+    margin-bottom: 12rem
+   .input, .btn, .select
+    width: 100%
+    height: 85rem
+    margin-bottom: 17rem
+   .form-accept
+    &__wrap
+     p 
+      text-align: left
+      width: 255rem
+   
+
+
+.sidebar
+ position: fixed
+ right: 0
+ top: 50%
+ transform: translateY(-50%)
+ z-index: 5
+ &-block 
+  width: 120rem
+  height: 100rem
+  background: #3FABE3
+  border-radius: 15rem 0rem 0rem 15rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-bottom: 6rem
+  cursor: pointer
+  transform: translateX(20rem)
+  padding-right: 20rem
+  transition: 0.4s
+  &:hover 
+   transform: none
+  &:nth-child(1)
+   img
+    width: 27rem
+    margin-bottom: 8rem
+  &:nth-child(2)
+   img
+    width: 33rem
+    margin-bottom: 11rem
+  &:nth-child(3)
+   background: #59B84A
+   img
+    width: 29rem
+    margin-bottom: 9rem
+  p
+   font-size: 12rem
+   font-weight: 500
+   color: #fff
+   text-align: center
+ &-up 
+  width: 50rem
+  height: 50rem
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #3FABE3
+  margin: 23rem auto 0
+  cursor: pointer
+  transform: translateX(20rem)
+  img 
+   width: 14rem
+   transition: 0.4s
+  &:hover 
+   img 
+    margin-bottom: 8rem

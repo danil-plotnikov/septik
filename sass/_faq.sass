@@ -1,0 +1,88 @@
+.faq
+ margin-bottom: 110rem
+ .block 
+  &-header 
+   margin-bottom: 90rem
+ &-wrap
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap 
+ &-block
+  margin-bottom: 34rem
+  padding-bottom: 34rem
+  width: 733rem
+  cursor: pointer
+  border-bottom: 1px solid #F6F8FA
+  &:nth-last-child(1),
+  &:nth-last-child(2)
+   border-bottom: 0
+   
+  &.active
+   .faq-block
+    &__answer
+     max-height: 500rem
+    &__plus
+     span 
+      &:first-child
+       transform: rotate(90deg)
+       top: 0
+       left: 40%
+  &__top 
+   display: flex
+   justify-content: space-between
+   align-items: center
+  &__plus
+   display: flex
+   align-items: center
+   justify-content: center 
+   width: 12rem
+   height: 12rem
+   position: relative
+   span 
+    display: block
+    background: #59B84A 
+    width: 12rem
+    height: 3rem
+    &:first-child
+     position: absolute
+     top: 50%
+     left: 50%
+     transform: translate(-50%, -50%)
+     width: 3rem
+     height: 12rem
+     transition: 0.4s
+  &__title
+   font-size: 24rem
+   letter-spacing: 0.02em
+   color: #000
+   font-weight: 500
+  &__answer
+   line-height: 188%
+   color: #92A1AC
+   letter-spacing: 0.02em
+   margin-top: 19rem
+   max-height: 0
+   overflow: hidden
+   transition: 0.4s
+ &-btn 
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 480rem
+  height: 100rem
+  border: 2rem solid #59B84A
+  box-shadow: inset 0rem -4rem 28rem rgba(255, 255, 255, 0.25)
+  border-radius: 500rem
+  &:hover 
+   img 
+    margin-right: 15rem
+  img 
+   width: 45rem
+   margin-right: 23rem
+   transition: 0.4s
+  p 
+   font-size: 20rem 
+   font-weight: 600
+   letter-spacing: 0.03em
+   color: #3F3F3F

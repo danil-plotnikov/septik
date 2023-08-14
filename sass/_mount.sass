@@ -1,0 +1,66 @@
+.mount
+ background: rgba(0, 0, 0, 0.5)
+ margin-bottom: 100rem
+ &-block
+  position: relative
+  color: #fff
+  padding: 137rem 175rem
+  display: flex
+  justify-content: space-between
+ &-bg 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover 
+  z-index: -1
+ &-header 
+  color: #fff
+  text-align: left
+  margin: 0
+ &-right 
+  height: 426rem
+  width: 357rem
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  align-items: flex-start
+ &-num 
+  width: 52rem
+  height: 52rem
+  border-radius: 50%
+  background: #59B84A
+  display: flex
+  align-items: center
+  justify-content: center
+  font-weight: 500
+  letter-spacing: 0.02em
+  position: relative
+  &::after 
+   content: ''
+   background: #59B84A
+   width: 7rem
+   height: 7rem
+   border-radius: 50%
+   left: 50%
+   transform: translateX(-50%)
+   bottom: -12rem
+   position: absolute
+ &-text 
+  font-size: 24rem
+  line-height: 167%
+  letter-spacing: 0.02em
+ &-nav 
+  display: flex
+  .arrow
+   position: static
+   transform: none 
+   margin-right: 16rem
+   width: 40rem
+   height: 40rem
+   border: 1px solid #FFFFFF
+   &:hover 
+    border: 1px solid $link-color
+   img 
+    filter: brightness(0) invert(1)

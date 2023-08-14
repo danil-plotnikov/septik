@@ -1,0 +1,155 @@
+.main
+ position: relative
+ color: #fff
+ padding: 40rem 0 221rem
+ margin-bottom: 47rem
+ &-bg 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover 
+  z-index: -1
+  &__mobile
+   display: none
+ h1 
+  font-size: 65rem
+  letter-spacing: 0.02em
+  margin-bottom: 77rem
+  font-weight: 400
+  span 
+   font-weight: 100
+   font-size: 55rem
+   position: relative
+   margin-left: 15rem
+   &::before
+    display: block
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 349rem
+    height: 80rem
+    border-radius: 500rem
+    border: 1.5rem solid #6DB03B
+ &-adv 
+  display: flex
+  align-items: center 
+  margin-bottom: 74rem
+  &__item
+   margin-right: 50rem
+   img 
+    width: 18rem
+    margin-bottom: 18rem 
+   p 
+    font-size: 15rem 
+    line-height: 153%
+    letter-spacing: 0.02em
+    span 
+     font-weight: 700
+ &-footer 
+  display: flex
+  align-items: center
+  &__hint
+   img 
+    width: 21rem
+    margin-bottom: 9rem 
+   p 
+    font-size: 12rem
+    line-height: 150%
+    letter-spacing: 0.03em
+ &-btn 
+  width: 380rem
+  margin-right: 38rem
+ &-hint
+  position: absolute
+  background: #3FABE3
+  width: 46rem
+  height: 46rem
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  font-weight: 500
+  color: #fff
+  letter-spacing: 0.03em
+  transition: 0.4s
+  &:hover 
+   transform: scale(1.08)
+   box-shadow: 0rem 0rem 31rem #9CDDFF
+   border: 0.5rem solid #3FABE3
+   padding: 7rem
+   p 
+    opacity: 1
+    z-index: 2
+   &::after
+    border: 0.5px solid #3FABE3
+    width: 64rem
+    height: 64rem
+    border-radius: 50%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: transparent
+   &::before
+    opacity: 0.5
+  p 
+   position: absolute
+   transition: 0.4s
+   top: 120%
+   left: 50%
+   transform: translateX(-50%)
+   width: 200rem
+   font-size: 12rem
+   padding: 8rem
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+   background: #fff
+   border-radius: 10rem
+   color: #000
+   text-align: center
+   z-index: -1
+   opacity: 0
+  &::before
+   content: ''
+   display: block
+   border-radius: 50%
+   opacity: 0
+   border: 0.3px solid #3FABE3
+   width: 90rem
+   height: 90rem
+   position: absolute
+   top: 50%
+   left: 50%
+   transform: translate(-50%,-50%)
+   transition: 0.4s
+  &::after
+   display: block
+   position: absolute
+   left: 50%
+   transform: translateX(-50%)
+   top: calc( 100% + 3rem )
+   border-radius: 50%
+   background: #3FABE3
+   width: 5.8rem
+   height: 5.8rem
+   content: ''
+  &-1
+   top: 630rem
+   left: 1047rem
+  &-2 
+   top: 493rem
+   left: 1338rem
+  &-3
+   top: 652rem
+   left: 1490rem
+  &-4
+   top: 805rem
+   left: 1268rem
+  &-5 
+   top: 365rem
+   left: 1525rem
+  &-6 
+   top: 734rem
+   left: 1652rem

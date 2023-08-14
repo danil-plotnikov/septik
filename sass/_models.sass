@@ -1,0 +1,291 @@
+.models
+ margin-bottom: 108rem
+ .block
+  &-header
+   margin-bottom: 59rem
+ &-manufacturer
+  &__wrap
+   margin-bottom: 42rem
+   position: relative
+   .arrow
+    width: 40rem
+    height: 40rem
+    &-prev 
+     left : auto
+     right: calc( 100% + 51rem )
+    &-next
+     right: auto
+     left: calc( 100% + 51rem )
+
+  &__block
+   width: 200rem
+   height: 100rem
+   border: 1rem solid #F5F5F5
+   border-radius: 20rem
+   display: flex
+   align-items: center
+   justify-content: center
+   cursor: pointer
+   margin: 0 auto
+   img 
+    opacity: 0.3
+    filter: saturate(0%)
+    transition: 0.4s
+    max-width: 90%
+    max-height: 90%
+   &:hover 
+    img 
+     opacity: 1
+   &.active 
+    background: #FAFAFA
+    img 
+     opacity: 1
+     filter: none
+ &-main 
+  display: none
+  justify-content: space-between
+  margin-bottom: 60rem
+  &.active 
+   display: flex
+ &-btn 
+  border: 1rem solid #F5F5F5
+  border-radius: 20rem
+  width: 200rem
+  height: 75rem
+  margin-bottom: 30rem
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #B2BEC7
+  letter-spacing: 0.01em
+  cursor: pointer
+  transition: 0.4s
+  &:last-child
+   margin-bottom: 0
+  &.active 
+   background: #3FABE3
+   border: 1rem solid #3FABE3
+   color: #FFFFFF
+ &-wrap 
+  width: 1342rem
+  background: #FAFAFA
+  border-radius: 25rem
+  padding: 45rem 53rem 48rem 48rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  display: none
+  &.active 
+   display: flex
+ &-img 
+  width: 380rem
+  height: 500rem
+  border-radius: 25rem
+  background: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+   width: 290rem
+   height: 390rem
+   object-fit: contain
+ &-info 
+  width: 393rem
+ &-title 
+  font-size: 18rem 
+  font-weight: 600
+  letter-spacing: 0.01em
+  color: #000 
+  margin-bottom: 16rem 
+ &-descr 
+  color: #797979
+  letter-spacing: 0.01em
+  line-height: 200%
+  margin-bottom: 55rem
+ &-line 
+  height: 507rem
+  width: 1rem
+  border-right: 2rem dashed #D9E1E6  
+ &-char 
+  display: flex
+  align-items: center
+  margin-bottom: 19rem
+  &__icon 
+    width: 25rem
+    height: 25rem
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #DFEBE2
+    border-radius: 50%
+    margin-right: 10rem
+    img 
+     width: 11rem
+  &__title 
+   font-size: 14rem
+   letter-spacing: 0.01em
+   color: #797979
+  &__text 
+   font-weight: 700
+   font-size: 14rem
+   letter-spacing: 0.01em
+   color: #3F3F3F
+   margin-left: auto
+ &-right 
+  width: 294rem
+ &-adv 
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 30rem
+  &__item 
+   width: 128rem
+   display: flex
+   align-items: center
+   margin-bottom: 22rem
+   p 
+    letter-spacing: 0.02em
+    font-size: 12rem
+    color: #3F3F3F
+    line-height: 142%
+  &__icon 
+   width: 25rem
+   height: 25rem
+   display: flex
+   align-items: center
+   justify-content: center
+   margin-right: 10rem
+   border-radius: 50%
+   img 
+    max-width: 11rem
+   &-1
+    background: #59B84A
+   &-2
+    background: #FF4444
+   &-3
+    background: #3FABE3
+   &-4
+    background: #3FABE3
+ &-price 
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 50rem
+  &__new
+   color: #3F3F3F
+   font-weight: 700
+   span 
+    font-size: 32rem
+  &__old 
+   p 
+    color: #797979
+    span 
+     text-decoration-line: line-through
+   &-date 
+    border-radius: 500rem
+    width: 75rem
+    height: 17rem
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #FF4444
+    margin-bottom: 5rem
+    img 
+     width: 4rem
+     margin-right: 4rem
+    p 
+     color: #FFFFFF
+     font-size: 9rem
+ &-order 
+  width: 291rem
+  height: 75rem
+  margin-bottom: 12rem
+  font-size: 16rem
+ &-hint 
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin-bottom: 50rem
+  cursor: pointer
+  &:hover 
+   .models-hint__text
+    opacity: 1
+    z-index: 1
+  p 
+   letter-spacing: 0.03em
+   font-weight: 500
+   text-decoration-line: underline
+   color: #3FABE3
+   margin-right: 6rem
+  &__icon 
+   width: 20rem
+   height: 20rem
+   border-radius: 50%
+   background: #3FABE3
+   display: flex
+   align-items: center
+   justify-content: center
+   img 
+    width: 5rem
+  &__text
+   position: absolute
+   top: 110%
+   left: 50%
+   transform: translateX(-50%)
+   width: 100%
+   padding: 5rem
+   font-size: 10rem
+   line-height: 150%
+   background: #fff
+   text-align: center
+   border-radius: 10rem
+   box-shadow: 0 0 10rem rgba(0, 0, 0, 0.1)
+   z-index: -1
+   opacity: 0
+   transition: 0.4s
+ &-footer 
+  display: flex
+  align-items: center
+  margin-bottom: 19rem
+  &:last-child
+   margin-bottom: 0
+  &__icon
+   width: 25rem
+   height: 25rem
+   display: flex
+   align-items: center
+   justify-content: center
+   margin-right: 10rem
+   border-radius: 50%
+   background: #DFEBE2
+   img 
+    max-width: 13rem
+  p 
+   font-size: 14rem
+   color: #797979
+   letter-spacing: 0.01em
+  a 
+   color: #59B84A
+   font-size: 14rem
+   text-decoration: underline
+   letter-spacing: 0.01em
+ &-shop 
+  display: flex
+  align-items: center
+  justify-content: center
+  p 
+   font-size: 30rem
+   line-height: 167%
+   color: #3F3F3F
+   letter-spacing: 0.01em
+   margin-right: 50rem
+   span 
+    font-weight: 700
+  &__btn 
+   background: #3FABE3
+   box-shadow: inset 0rem -4rem 28rem rgba(255, 255, 255, 0.25)
+   border-radius: 500rem
+   width: 340rem
+   height: 100rem

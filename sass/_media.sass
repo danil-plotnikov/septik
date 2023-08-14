@@ -1,0 +1,1630 @@
+@media screen and ( max-width: 600px )
+ html 
+  font-size: 0.3125vw 
+
+ html, body 
+  overflow-x: hidden
+  max-width: 100%
+
+
+ .up
+  display: flex
+  width: 30rem
+  height: 30rem
+  &::before
+   border: 8rem solid transparent
+   border-bottom: 10rem solid #fff
+
+ .select
+  &__toggle
+   padding-left: 60rem
+   font-size: 16rem
+   &-img 
+    width: 30rem
+    height: 30rem
+    left: 20rem
+    img 
+     width: 15rem
+  &__dropdown
+   li
+    height: 50rem
+    padding-left: 60rem
+
+ .hidden
+  &-desktop
+   display: block
+  &-mobile
+   display: none 
+ 
+ .form-accept
+  &__check
+   width: 20rem
+   height: 20rem
+   img 
+    width: 8rem
+  &__wrap
+   p 
+    width: 168rem
+    font-size: 8rem
+    line-height: 11rem
+
+
+ .swipe
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 22rem
+  p 
+   font-size: 8rem
+   letter-spacing: 0.03em
+   color: #1C1C1C
+   margin-right: 4rem
+   text-align: right
+   span 
+    font-weight: 700
+  img 
+   width: 13rem
+
+ .owl
+  &-dots 
+   justify-content: center
+  &-dot
+   margin: 0 3rem
+   span
+    width: 6rem
+    height: 6rem
+
+ .block
+  &-header
+   font-size: 16rem
+   line-height: 125%
+   width: 100%
+   span 
+    &::before 
+     width: 87rem
+     height: 39rem
+  &-title
+   font-size: 16rem
+   width: 100%
+   line-height: 144%
+ 
+ .container
+  width: 100%
+  padding: 0 20rem
+
+ .header
+  position: absolute
+  top: 0
+  padding: 15rem 20rem
+  width: 100%
+  flex-wrap: wrap
+  margin-bottom: 30rem
+  &.fixed
+   padding: 10rem 20rem
+   z-index: 100
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   background: rgba(0, 0, 0, 0.9)
+  &-logo
+   img 
+    width: 78rem
+    margin-right: 0
+   p 
+    display: none
+  &-map,
+  &-catalog,
+  &-messenger
+   display: none
+  &-call
+   &__time 
+    margin-bottom: 7rem
+    p 
+     font-size: 9rem
+   a
+    margin-bottom: 5rem
+    img 
+     width: 11rem
+     margin-right: 1rem
+    p 
+     font-size: 14rem
+   &__popup
+    font-size: 9rem
+  &-burger
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   height: 15rem
+   span 
+    background: #FFFFFF
+    width: 20rem
+    height: 2.13rem
+
+
+ .nav
+  position: fixed
+  top: 0
+  right: -100%
+  transition: 0.4s
+  left: auto
+  transform: none
+  width: 100%
+  height: 100vh
+  z-index: 200
+  border-radius: 0
+  padding: 50rem 0
+  background: #fff
+  .container
+   display: flex
+   flex-direction: column
+   align-items: center
+   justify-content: space-around
+   padding: 0
+  &.active
+   right: 0
+  &-close
+   display: block
+   position: absolute
+   right: 20rem
+   font-weight: 600
+   top: 0
+   font-size: 50rem
+   color: $link-color
+  a
+   justify-content: flex-end
+   text-align: center
+   font-size: 14rem
+   height: auto 
+   padding: 14rem 20rem
+   color: #3F3F3F
+   &:hover 
+    color: #1C1C1C
+    background: transparent
+
+
+ .main 
+  padding: 96rem 0 59rem
+  margin-bottom: 3rem
+  h1
+   font-size: 21rem
+   text-align: center
+   line-height: 30rem
+   margin-bottom: 32rem
+   br 
+    display: none
+   span 
+    font-size: 21rem
+    &::before
+     width: 129rem
+     height: 32rem
+  &-adv 
+   flex-wrap: wrap
+   width: 220rem
+   margin: 0 auto 16rem
+   justify-content: space-between
+   &__item 
+    margin-bottom: 11rem
+    margin-right: 0
+    &:nth-child(1)
+     width: 77rem
+    &:nth-child(2)
+     width: 82rem
+    &:nth-child(3)
+     width: 113rem
+    &:nth-child(4)
+     width: 82rem
+    &:nth-child(5)
+     width: 100%
+    img 
+     margin-bottom: 11rem
+     width: 12rem
+    p 
+     line-height: 15rem
+     font-size: 10rem
+     br 
+      display: none
+  &-footer 
+   flex-direction: column
+   &__hint 
+    img 
+     width: 15rem
+     display: block
+     margin: 0 auto 4rem
+    p 
+     font-size: 8rem
+     line-height: 11rem
+     text-align: center
+     margin: 0 auto
+     width: 246rem
+     br 
+      display: none
+  &-btn 
+   width: 100%
+   height: 60rem
+   font-size: 12rem
+   margin-bottom: 21rem
+
+ .add
+  flex-direction: column
+  align-items: flex-start
+  margin-bottom: 29rem
+  &-left
+   width: 100%
+  &-header
+   font-size: 16rem
+   line-height: 22rem
+   margin-bottom: 14rem
+   text-align: center
+   width: 100%
+  .arrow 
+   display: none
+  .swipe
+   width: 100%
+  &-slider 
+   width: 600rem
+   padding-bottom: 22rem
+   .owl-dots
+    bottom: 0
+    width: calc( 100vw - 40rem )
+    left: 0
+    transform: none
+   .owl-item
+    transition: 0.4s
+   .last
+    opacity: 0.25
+    
+  &-block 
+   img 
+    width: 115rem
+    height: 70rem
+    margin-right: 16rem
+   &__title 
+    font-size: 14rem
+    line-height: 20rem
+    margin-bottom: 4rem
+    width: 96rem
+   &__text
+    font-size: 10rem
+ 
+ .quiz
+  padding-top: 85rem
+  margin-bottom: -85rem
+  margin-bottom: 33rem
+  .block
+   &-header 
+    margin-bottom: 21rem
+  &-adv 
+   width: 100%
+   margin-bottom: 31rem
+   &__block
+    max-width: 85rem
+   &__num 
+    width: 25rem
+    height: 25rem
+    font-size: 8rem
+    margin-bottom: 14rem
+    &::after 
+     display: none
+   &__text 
+    font-size: 7rem
+  &-wrap 
+   padding: 16rem
+   padding-bottom: 30rem
+  &-main 
+   width: 100%
+   min-height: auto
+  &-line 
+   height: 20rem
+   padding: 3rem 5rem 
+   margin-bottom: 27rem
+   &__text 
+    font-size: 8rem
+  &-right 
+   display: none
+  &-question
+   margin-bottom: 27rem
+   input 
+    &:checked
+     ~.quiz-question__photo-img>.quiz-question__check,
+     ~.quiz-question__check
+      border: 2rem solid #47AB38
+   &__title 
+    font-size: 16rem
+    margin-bottom: 27rem
+   &__check 
+    width: 12rem
+    height: 12rem
+    border: 2px solid #F9F9F9
+    img 
+     width: 3rem
+   &__photo
+    flex-wrap: wrap 
+    margin-bottom: 0
+    &.big-photo
+     .quiz-question__photo
+      &-img
+       width: 100%
+       height: 200rem
+    label
+     margin-bottom: 16rem
+    &-img 
+     width: 113rem 
+     height: 142rem
+     margin-bottom: 10rem
+    &-text 
+     font-size: 8rem
+   &__number
+    &-block 
+     width: 100%
+     height: 40rem
+     padding: 0 6rem
+     margin-bottom: 10rem
+     p 
+      font-size: 12rem
+    &-choose
+     input 
+      font-size: 12rem
+      margin: 0 6rem
+   &__text 
+    label 
+     width: 100%
+     height: 40rem
+     padding: 0 6rem
+     margin-bottom: 10rem
+     .quiz-question__check
+      margin-right: 10rem
+     p 
+      font-size: 12rem
+    &-hint
+     width: 15rem
+     height: 15rem
+     img 
+      width: 3rem
+     &-text 
+      padding: 5rem
+      width: 180rem
+      font-size: 10rem
+      padding: 5rem
+      left: auto 
+      right: 0
+      top: auto 
+      bottom: 0
+
+
+  &-footer 
+   position: static
+   justify-content: center
+   flex-direction: column
+   &__hint
+    justify-content: center
+    margin-bottom: 12rem
+    img 
+     width: 15rem
+     margin-right: 8rem
+    p 
+     font-size: 8rem
+  &-buttons 
+   flex-direction: column-reverse
+   justify-content: center
+  &-btn 
+   width: 100rem
+   height: 45rem
+   font-size: 13rem
+   &__next
+    &::after 
+     top: 110%
+     left: 50%
+     transform: translateX(-50%)
+     text-align: center
+     padding: 5rem
+     font-size: 10rem
+     width: 100rem
+     border-radius: 5rem
+   &__prev 
+    margin: 0
+    margin-top: 5rem
+  &-load 
+   width: 100%
+   img 
+    width: 30rem
+    margin-bottom: 15rem
+   p 
+    font-size: 18rem
+  &-result 
+   height: auto
+   width: 100%
+   padding: 25rem 15rem
+   &__bg 
+    object-position: left center
+   &__wrap 
+    width: 100%
+   &__title 
+    font-size: 28rem
+    margin-bottom: 20rem
+   &__subtitle
+    font-size: 16rem
+    margin-bottom: 20rem
+   &__text 
+    font-size: 12rem
+    margin-bottom: 10rem
+   &__form 
+    width: 100%
+    .select 
+     height: 60rem
+     width: 100%
+     margin-bottom: 12rem
+    .input 
+     height: 60rem
+     padding-left: 20rem
+     font-size: 12rem
+     margin-bottom: 12rem
+    .btn 
+     font-size: 12rem
+     margin-bottom: 12rem
+     height: 60rem
+
+ .models 
+  margin-bottom: 29rem
+  .block
+   &-header 
+    margin-bottom: 15rem
+    br 
+     display: none
+  &-manufacturer
+   padding-bottom: 20rem
+   margin-bottom: 20rem
+   .owl-dots
+    bottom: 0
+   &__block
+    height: 35rem
+    width: 72rem
+    border: 0.7px solid #F5F5F5
+    border-radius: 10px
+  &-buttons 
+   width: 100%
+   max-height: 50rem
+   display: flex
+   flex-direction: column
+   overflow: hidden
+   border: 1px solid #F5F5F5
+   position: absolute
+   top: 0
+   left: 0
+   transition: 0.4s
+   &.active 
+    max-height: 1000rem
+   &::after 
+    width: 9rem
+    height: 5rem
+    display: block
+    position: absolute
+    top: 22rem
+    right: 22rem
+    content: ''
+    background: url(../img/icons/arrow.svg)
+  &-btn 
+   width: 276rem
+   color: #B2BEC7
+   height: auto
+   margin-bottom: 0
+   font-size: 14rem
+   padding: 16rem 0
+   justify-content: flex-start
+   text-align: left
+   padding-left: 23rem
+   order: 2
+   background: #fff
+   &.active 
+    order: 1
+    background: #fff
+    color: #B2BEC7
+    border: 1rem solid #fff
+  &-main 
+   flex-direction: column
+   margin-bottom: 19rem
+   padding-top: 70rem
+   position: relative
+  &-wrap 
+   width: 100% 
+   padding: 14rem 14rem 35rem
+   flex-direction: column
+  &-img 
+   width: 245rem
+   height: 250rem
+   margin-bottom: 8rem
+   img 
+    width: 158rem
+    height: 212rem
+  &-info 
+   width: 100%
+   margin-bottom: 20rem
+  &-title 
+   font-size: 12rem
+   margin-bottom: 12rem
+   position: relative
+   display: flex
+   align-items: center
+   justify-content: space-between
+   &::after
+    background: #59B84A
+    content: '+'
+    display: flex 
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    font-size: 9rem
+    font-weight: 600
+    color: #fff
+    width: 15rem
+    height: 15rem
+  &-descr 
+   font-size: 10rem
+   margin-bottom: 15rem
+   display: none
+  &-char 
+   margin-bottom: 6rem
+   display: none
+   &__icon 
+    width: 20rem
+    height: 20rem
+    img 
+     width: 9rem
+   &__title 
+    font-size: 10rem
+   &__text 
+    font-size: 10rem
+  &-right 
+   width: 202rem
+   margin: 0 auto 
+  &-adv  
+   margin-bottom: 14rem
+   &__icon 
+    width: 25rem
+    height: 25rem
+    margin-right: 10rem
+    img 
+     max-width: 11rem
+   &__item
+    width: 90rem
+    p 
+     font-size: 7rem
+  &-price 
+   margin-bottom: 14rem
+   &__new 
+    font-size: 10rem
+    span 
+     font-size: 20rem
+   &__old 
+    p 
+     font-size: 10rem
+     span 
+      font-size: 14rem
+    &-date 
+     width: 75rem
+     height: 17rem
+     margin-bottom: 1rem
+     img 
+      width: 4rem
+      margin-right: 4rem
+     p 
+      font-size: 9rem
+  &-order 
+   width: 100%
+   height: 60rem
+   font-size: 12rem
+  &-hint 
+   margin-bottom: 14rem
+   p 
+    font-size: 12rem
+   &__icon
+    width: 11rem
+    height: 11rem
+    img 
+     width: 3rem
+  &-footer 
+   &__icon 
+    margin-right: 8rem
+    width: 15rem
+    height: 15rem
+    img 
+     max-width: 8rem 
+   p 
+    margin-bottom: 3rem
+   a,p
+    font-size: 10rem
+  &-line 
+   display: none
+  &-shop
+   flex-direction: column
+   p 
+    font-size: 12rem
+    text-align: center
+    margin-right: 0 
+    margin-bottom: 11rem
+    br 
+     display: none
+   &__btn 
+    width: 202rem
+    height: 60rem
+    font-size: 12rem
+
+
+ .catalog
+  height: 500rem
+  padding: 27rem 25rem
+  width: calc( 100% - 40rem )
+  margin-bottom: 8rem
+  &-title 
+   font-size: 10rem
+   text-align: center
+   margin-bottom: 19rem
+  &-header 
+   font-size: 16rem
+   margin-bottom: 26rem
+   text-align: center
+   span 
+    &::before
+     width: 93rem
+     height: 41rem
+   br 
+    display: none
+  &-update 
+   margin-bottom: 25rem
+   justify-content: center
+   img 
+    width: 14rem
+    margin-right: 7rem
+   p 
+    font-size: 12rem
+  &-form 
+   &__wrap
+    flex-direction: column
+    .input, .btn, .select
+     width: 100%
+     height: 60rem
+     margin-right: 0
+     margin-bottom: 10rem
+     font-size: 16rem
+    .input
+     padding-left: 20rem
+  &-btn 
+   width: 202rem
+   display: block
+   margin: 0 auto
+   height: 60rem
+   font-size: 12rem
+ 
+ .budget 
+  padding-top: 85rem
+  margin-bottom: -85rem
+  flex-direction: column
+  align-items: flex-start
+  margin-bottom: 20rem
+  &-left 
+   width: 100%
+  &-header 
+   margin-bottom: 11rem
+   font-size: 16rem
+   width: 100%
+   text-align: center
+   br 
+    display: none
+   span 
+    &::before
+     width: 101rem
+     height: 45rem
+  &-title 
+   font-size: 10rem 
+   margin-bottom: 12rem
+   width: 100%
+   text-align: center
+   br 
+    display: none
+  .swipe 
+   width: 100%
+   justify-content: center
+  &-nav 
+   display: none
+  &-slider 
+   width: 457rem
+   padding-bottom: 25rem
+   .owl-dots 
+    width: calc( 100vw - 40rem )
+    left: 0
+    transform: none
+    bottom: 0
+  &-block 
+   width: 220rem
+   height: 140rem
+   padding: 16rem 26rem 20rem
+   &__title 
+    font-size: 12rem
+    margin-bottom: 12rem
+   &__text 
+    display: none
+   &__btn
+    width: 110rem
+    height: 38rem
+    font-size: 9rem
+
+ .guarantees
+  height: 377rem
+  padding: 51rem 46rem 102rem
+  &-num
+   width: 95rem
+   margin-bottom: 15rem
+  &-text 
+   font-size: 16rem
+   line-height: 26rem
+   span 
+    &::before 
+     width: 105rem
+     height: 40rem
+ .free
+  margin-top: -58rem
+  padding: 69rem 44rem 
+  height: 500rem
+  width: 277rem
+  border-radius: 25rem 
+  overflow: hidden
+  margin-bottom: 22rem
+  &-icon
+   width: 32rem
+   height: 32rem
+   margin-bottom: 16rem
+   &::after 
+    width: 4rem
+    height: 4rem
+    bottom: -8rem
+   img 
+    width: 14rem
+  &-header 
+   font-size: 16rem
+   line-height: 21rem
+   width: 181rem 
+
+ .more
+  flex-direction: column
+  margin-bottom: 35rem
+  &-left 
+   width: 100%
+   text-align: center
+  .block
+   &-header 
+    margin-bottom: 19rem
+  &-right 
+   width: 100%
+  &-block 
+   flex-direction: column
+   min-width: auto
+   margin-bottom: 19rem
+   width: 110rem
+   &__check 
+    width: 25rem
+    height: 25rem
+    margin-bottom: 9rem
+    img 
+     width: 8rem
+   &__title 
+    font-size: 10rem
+    margin-bottom: 9rem
+   &__text 
+    font-size: 8rem
+    br 
+     display: none
+   &__wrap
+    width: 246rem
+    margin: 0 auto
+  &-footer 
+   padding: 28rem 31rem
+   &__title 
+    font-size: 14rem
+    line-height: 20rem
+    margin-bottom: 8rem
+   &__text 
+    font-size: 8rem
+    line-height: 12rem
+
+ .arranged
+  padding-top: 85rem
+  margin-bottom: -85rem
+  margin-bottom: 41rem
+  .block
+   &-header
+    margin-bottom: 15rem
+    br 
+     display: none
+  .swipe
+   margin-bottom: 15rem
+  &-slider 
+   padding-bottom: 20rem
+  &-block 
+   width: 100%
+   &__big 
+    height: 225rem
+    margin-bottom: 9rem
+   &__images
+    margin-bottom: 12rem
+    img 
+     width: 62rem
+     height: 50rem
+   &__title
+    font-size: 14rem
+    margin-bottom: 13rem
+    text-align: center
+   &__footer 
+    justify-content: center
+   &__wrap 
+    &:first-child
+     margin-right: 12rem
+    img 
+     width: 10rem
+    p 
+     font-size: 9rem
+
+ .video 
+  flex-direction: column 
+  margin-bottom: 36rem
+  padding-bottom: 47rem
+  position: relative
+  &-left 
+   width: 100%
+   position: static
+   &__sticky
+    position: static
+  .block
+   &-header 
+    text-align: center
+    margin-bottom: 14rem
+    br
+     display: none
+  &-more 
+   justify-content: center
+   position: absolute
+   bottom: 0
+   width: 100%
+   left: 0
+   &__icon 
+    width: 25rem
+    height: 25rem
+    margin-right: 8rem
+    img 
+     width: 11rem
+   p 
+    font-size: 10rem
+  &-right 
+   width: 100%
+   padding-bottom: 20rem 
+   .owl-item 
+    border-radius: 20rem
+    overflow: hidden
+   .owl-dots 
+    bottom: 0
+  &-block 
+   width: 100%
+   height: 168rem
+   &__icon 
+    width: 41rem
+    height: 28rem
+
+ .reviews
+  margin: 0 22rem 39rem
+  .block
+   &-header 
+    margin-bottom: 28rem
+    br 
+     display: none
+  &-wrap 
+   flex-direction: column
+  &-video 
+   width: 100%
+   padding-top: 30rem
+   position: relative
+   margin-bottom: 31rem
+   .video-more 
+    position: static
+   &__slider 
+    padding-bottom: 20rem
+    margin-bottom: 17rem
+    .owl-dots 
+     bottom: 0
+     top: auto
+   &__block 
+    width: 276rem
+    height: 168rem
+    &-icon 
+     width: 41rem
+     height: 28rem
+   &__title 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    font-size: 14rem
+    text-align: center
+   &__wrap 
+    display: none
+  &-photo 
+   width: 358rem
+   position: relative
+   padding-top: 45rem
+   &__slider 
+    width: 100%
+    .owl-item 
+     height: 200rem
+   &__block 
+    width: 157rem
+    height: 161rem
+    padding: 10rem
+   &__rate 
+    position: absolute
+    margin-bottom: 0
+    top: 0
+    width: calc(100vw - 40rem)
+    justify-content: center
+   .video
+    &-more 
+     width: calc(100vw - 40rem)
+  &-more 
+   &__pin 
+    width: 20rem
+    margin-right: 8rem
+ 
+ .openly
+  width: calc( 100% - 40rem )
+  padding: 56rem 37rem
+  height: 500rem
+  text-align: center
+  margin-bottom: -53rem 
+  &-bg 
+   border-radius: 25rem
+  &-header 
+   font-size: 16rem 
+   margin-bottom: 12rem
+   br 
+    display: none
+  &-subtitle 
+   font-size: 10rem
+   line-height: 15rem
+   width: 180rem
+   margin: 0 auto 13rem
+   br 
+    display: none
+  &-text 
+   font-size: 8rem
+   line-height: 9rem
+   margin-bottom: 16rem
+  &-btn 
+   width: 202rem
+   height: 60rem
+   img 
+    width: 25rem
+    margin-right: 18rem
+   p 
+    font-size: 10rem
+
+ .install
+  padding: 71rem 22rem 33rem 
+  flex-direction: column
+  align-items: center
+  margin-bottom: 0
+  &-wrap 
+   padding-bottom: 156rem
+   position: relative
+   margin-bottom: 25rem
+  .block
+   &-header 
+    margin-bottom: 10rem
+    text-align: center
+    br 
+     display: none
+  &-subtitle 
+   text-align: center
+   font-size: 10rem
+   margin-bottom: 33rem
+  .swipe
+   position: absolute
+   bottom: -60rem
+   width: 100%
+   left: 0
+  &-adv 
+   position: absolute
+   bottom: -150rem
+   width: 500rem
+   padding-bottom: 28rem
+   .owl-dots
+    bottom: 0
+    width: calc(100vw - 40rem)
+    left: 0
+    transform: none
+   .owl-item
+    transition: 0.4s
+    &.last 
+     opacity: 0.25
+   &__item 
+    img 
+     width: 115rem
+     height: 70rem
+     margin-right: 16rem
+    p 
+     font-size: 14rem
+     color: #3F3F3F
+     font-weight: 700
+     width: auto
+  &-block 
+   &:first-child
+    margin-bottom: 33rem
+   &__icon 
+    width: 32rem
+    height: 32rem
+    margin-right: 14rem
+    &::after 
+     width: 4rem
+     height: 4rem
+     bottom: -8rem
+    img 
+     max-width: 12rem
+   &__title 
+    font-size: 12rem
+    line-height: 17rem
+    margin-bottom: 6rem
+    width: 186rem
+    br 
+     display: none
+   &__text 
+    font-size: 8rem 
+    line-height: 12rem
+    width: 186rem
+    br 
+     display: none
+
+
+ .numbers 
+  flex-wrap: wrap
+  width: 252rem
+  margin-bottom: 39rem
+  padding: 0
+  &-block 
+   width: 107rem
+   margin-bottom: 22rem
+   text-align: center
+   &__title 
+    font-size: 16rem
+    margin-bottom: 0
+    span 
+     font-size: 64rem
+   &__text 
+    font-size: 12rem 
+    line-height: 17rem
+    br
+     display: none
+
+ .engineers 
+  flex-direction: column
+  margin-bottom: 36rem
+  &-buttons 
+   width: 100%
+   max-height: 50rem
+   display: flex
+   flex-direction: column
+   overflow: hidden
+   border: 1px solid #F5F5F5
+   position: absolute
+   top: calc( 100% - 50rem )
+   z-index: 20
+   left: 0
+   transition: 0.4s
+   &.active 
+    max-height: 1000rem
+   &::after 
+    width: 9rem
+    height: 5rem
+    display: block
+    position: absolute
+    top: 22rem
+    right: 22rem
+    content: ''
+    background: url(../img/icons/arrow.svg)
+  &-btn 
+   width: 100%
+   color: #3F3F3F 
+   height: auto
+   margin-bottom: 0
+   font-size: 14rem
+   padding: 16rem 0
+   justify-content: flex-start
+   text-align: left
+   padding-left: 23rem
+   order: 2
+   background: #fff
+   &.active 
+    order: 1
+    background: #fff
+    color: #3F3F3F
+    border: 1rem solid #fff
+   
+  &-certif 
+   margin: 0
+  &-left 
+   width: 100%
+   padding-bottom: 50rem
+   margin-bottom: 17rem
+   position: relative
+  .block
+   &-header 
+    text-align: center
+    margin-bottom: 17rem
+    br 
+     display: none
+  &-right 
+   &__wrap
+    width: 100%
+  &-images 
+   width: 100%
+   margin-right: 0
+   padding-bottom: 25rem
+   .owl-dots
+    bottom: 0
+    width: 100%
+    transform: none 
+    left: 0
+  &-img 
+   height: 250rem
+   width: 100% !important
+  &-right 
+   flex-direction: column
+   &.active
+    position: relative
+  &-descr
+   display: none
+  &-nav 
+   display: none
+  &-name 
+   font-size: 14rem
+   color: #fff 
+   text-align: center
+   margin: 0
+   position: absolute
+   left: 0
+   width: 100%
+   bottom: 40rem
+   br 
+    display: none
+
+ .mount 
+  margin-bottom: 31rem
+  &-block 
+   padding: 30rem 24rem 60rem
+   flex-direction: column
+   justify-content: space-between
+   height: 525rem
+  &-header 
+   text-align: center
+   width: 200rem
+   margin: 0 auto 88rem
+   br 
+    display: none
+  &-right 
+   width: 100%
+   height: auto
+   text-align: center
+   align-items: center
+  &-num 
+   width: 32rem
+   height: 32rem
+   font-size: 10rem
+   margin-bottom: 40rem
+   &::after 
+    bottom: -8rem
+    width: 4rem
+    height: 4rem
+  &-text 
+   font-size: 14rem
+   line-height: 24rem
+   margin-bottom: 31rem
+   width: 225rem
+
+ .quality
+  padding-top: 85rem
+  margin-bottom: -85rem
+  margin-bottom: 26rem
+  .block
+   &-header 
+    margin-bottom: 13rem
+  &-wrap 
+   width: 500rem
+   padding-bottom: 10rem
+   .owl-dots
+    width: 100vw 
+    left: -20rem 
+    bottom: 0
+    transform: none
+  &-block
+   text-align: center
+   width: 240rem
+   &__num 
+    width: 32rem
+    height: 32rem
+    font-size: 10rem
+    margin: 0 auto 26rem
+    &::after 
+     width: 4rem
+     height: 4rem
+     bottom: -8rem
+   &__title 
+    font-size: 14rem
+    line-height: 24rem
+    margin-bottom: 19rem
+    br 
+     display: none
+   &__text 
+    font-size: 10rem
+    line-height: 17rem
+    margin-bottom: 5rem
+    br 
+     display: none
+
+ .report 
+  width: calc( 100% - 40rem )
+  padding: 65rem 33rem
+  text-align: center
+  height: 500rem
+  margin-bottom: 33rem
+  &-bg 
+   border-radius: 25rem
+  .block
+   &-header 
+    margin-bottom: 17rem
+    text-align: center
+    br 
+     display: none
+  &-text 
+   font-size: 10rem
+   line-height: 15rem
+   width: 187rem
+   margin: 0 auto
+   br 
+    display: none
+ 
+ .faq
+  margin-bottom: 31rem
+  .block
+   &-header 
+    margin-bottom: 22rem
+  &-block 
+   margin-bottom: 17rem
+   padding-bottom: 17rem
+
+   &__title 
+    font-size: 10rem 
+    max-width: 90%
+   &__plus 
+    width: 9rem
+    height: 9rem
+    span 
+     width: 9rem
+     height: 2rem
+     &:first-child
+      width: 2rem
+      height: 9rem
+   &__answer
+    font-size: 10rem
+    line-height: 20rem
+    margin-top: 9rem
+  &-btn 
+   width: 202rem
+   height: 60rem
+   margin: 0 auto 
+   img 
+    width: 25rem
+    margin-right: 18rem
+   p 
+    font-size: 10rem
+    width: 112rem
+
+
+ .request
+  padding-top: 85rem
+  margin-top: -85rem
+  margin-bottom: 23rem
+  .block
+   &-header
+    margin-bottom: 13rem
+   &-title 
+    margin-bottom: 19rem
+  &-main 
+   padding: 26rem 21rem
+   height: 600rem
+  &-bg 
+   border-radius: 25rem
+  &-title 
+   font-size: 16rem
+   margin-bottom: 15rem
+   text-align: center
+  &-item 
+   margin-bottom: 10rem
+   &__icon
+    width: 20rem
+    height: 20rem
+    margin-right: 8rem
+    img 
+     width: 6rem
+   p 
+    font-size: 10rem
+    line-height: 15rem
+    max-width: 90%
+    br 
+     display: none
+  &-text 
+   font-size: 10rem
+   width: 180rem
+   margin: 0 auto 
+   text-align: center
+   line-height: 14rem
+  &-form
+   display: none
+  &-employee
+   display: none
+ .contacts 
+  padding-top: 85rem
+  margin-bottom: -85rem
+  flex-direction: column
+  margin-bottom: 28rem
+  .block
+   &-header 
+    margin-bottom: 25rem
+    font-size: 20rem
+  &-info 
+   width: 100%
+   flex-direction: row
+   flex-wrap: wrap
+   margin-bottom: 34rem
+   &__block 
+    width: 134rem
+    margin-bottom: 11rem
+    position: relative
+    padding-left: 23rem
+    img 
+     max-width: 15rem
+     margin-right: 8rem
+     position: absolute
+     left: 0
+     top: 0
+   &__title 
+    font-size: 8rem
+    margin-bottom: 0
+   &__text 
+    font-size: 8rem
+    line-height: normal
+    br 
+     display: none
+  &-socials 
+   order: 2
+   margin-top: 25rem
+   justify-content: center 
+   width: 100%
+   a 
+    margin: 0 3rem
+  &-photo 
+   margin-bottom: 34rem
+   &__title
+    font-size: 16rem
+    margin-bottom: 13rem
+    font-weight: 700
+    text-align: center
+  &-slider
+   padding-bottom: 15rem
+   margin-bottom: 28rem
+   .owl-dots
+    bottom: 0
+    left: 0
+    width: 100%
+    transform: none
+    justify-content: center
+   &__nav 
+    display: none
+  &-map 
+   width: 100%
+   iframe
+    height: 229rem
+
+ .footer 
+  padding: 17rem 0 52rem 
+  &-wrap 
+   flex-direction: column
+  &-logo 
+   text-align: center
+   flex-direction: column
+   img 
+    width: 170rem
+    margin-bottom: 20rem
+   p
+    font-size: 10rem
+    line-height: 17rem
+    margin-bottom: 12rem
+  &-text 
+   font-size: 10rem
+   margin-bottom: 31rem
+   &:last-child
+    margin-bottom: 0
+  &-politics
+   font-size: 10rem
+   margin-bottom: 21rem
+
+
+ .popup
+  &-main 
+    border-radius: 20rem
+  &-close 
+   top: 15rem
+   right: 15rem
+   width: 15rem
+  &-request
+   
+   &__bg 
+    display: none
+   &__main 
+    width: 100%
+    height: auto
+    padding: 40rem 20rem
+    background: #fff
+   &__wrap
+    width: 100%
+   &__title 
+    font-size: 20rem
+    margin-bottom: 12rem
+   &__text 
+    font-size: 14rem
+    margin-bottom: 20rem
+   form 
+    .input
+     width: 100%
+     height: 60rem
+     margin-bottom: 12rem
+     font-size: 12rem
+     padding-left: 20rem
+    .btn 
+     height: 60rem
+     font-size: 12rem
+     width: 100%
+     margin-bottom: 12rem
+  &-stock
+   &__main
+    background: #fff
+    width: 100%
+    height: auto
+    padding: 40rem 20rem
+   &__header 
+    font-size: 20rem
+    margin-bottom: 12rem
+   &__title 
+    font-size: 16rem
+    margin-bottom: 8rem
+   &__text 
+    font-size: 12rem
+    margin-bottom: 20rem
+   form 
+    .input
+     width: 100%
+     height: 60rem
+     margin-bottom: 12rem
+     font-size: 12rem
+     padding-left: 20rem
+    .btn 
+     height: 60rem
+     font-size: 12rem
+     width: 100%
+     margin-bottom: 12rem
+  &-politic
+   &__main 
+    padding: 15rem
+    padding-top: 30rem
+    h2 
+     margin-bottom: 12rem
+     font-size: 16rem
+    p 
+     font-size: 12rem
+     margin-bottom: 8rem 
+     line-height: 150%
+  &-leave
+   &__main 
+    height: auto
+    width: 100%
+    padding: 15rem
+   &__bg 
+    object-position: left center
+   &__header 
+    font-size: 24rem
+    margin-bottom: 12rem
+   &__text 
+    font-size: 12rem
+    margin-bottom: 12rem
+   &__title 
+    font-size: 18rem
+    margin-bottom: 12rem
+   &__form 
+    width: 100%
+    &-text 
+     font-size: 10rem
+     margin-bottom: 12rem
+    .input, .btn, .select
+     height: 60rem
+     margin-bottom: 15rem
+    .input
+     font-size: 12rem
+     padding-left: 20rem
+    .btn 
+     font-size: 16rem
+
+ .pages
+  &-404
+   margin-bottom: 0
+   .main-content
+    padding: 80rem 0
+    min-height: auto 
+    height: auto
+   &__text 
+    margin-bottom: 20rem
+   h1 
+    margin-bottom: 20rem
+   &__btn 
+    width: 100%
+    height: 60rem
+    font-size: 12rem
+    &-wrap 
+     width: 90%
+  &-thanks 
+   margin-bottom: 0
+   .main-content
+    height: auto
+    min-height: auto
+    padding: 20rem 0 220rem
+   &__text 
+    text-align: center
+    font-size: 18rem
+    margin-bottom: 20rem
+   &__btn 
+    width: 100%
+    height: 60rem
+    font-size: 12rem
+    &-wrap 
+     width: 90%
+     margin: 0 auto
+  &-quiz 
+   .main
+    &-adv
+     justify-content: space-between
+     &__item
+      margin-right: 0
+  &-instruction
+   margin-bottom: 0
+   &__text 
+    text-align: center
+    margin-bottom: 12rem
+    font-size: 16rem
+   &__form
+    &-wrap 
+     flex-direction: column
+    .input, .btn, .select
+     margin-right: 0
+     width: 100%
+     height: 60rem
+     margin-bottom: 10rem
+     font-size: 16rem
+    .input
+     padding-left: 20rem
+    .form-accept
+     &__wrap 
+      margin-top: 0
+
+  
+
+ .sidebar
+  display: none
+
+ .popup
+  &-video
+   display: none
+
+   
